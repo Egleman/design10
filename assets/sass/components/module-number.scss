@@ -1,0 +1,74 @@
+.design10 {
+    .module-number {
+        padding: 9px 10px 17px 55px;
+        border: 1px solid #c7c7c7;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        &_article {
+            padding: 9px 30px 17px 30px;
+        }
+        @include media('xmd') {
+            padding: 9px 15px 17px 15px;
+        }
+        &__title {
+            font-family: var(--font-family);
+            font-weight: 600;
+            font-size: 32px;
+            letter-spacing: -0.02em;
+            text-align: center;
+            color: #626262;
+            margin-bottom: 27px;
+            @include media('xmd') {
+                font-size: 25px;
+            }
+        }
+        &__list {
+            list-style-type: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 5px;
+            margin-bottom: 12px;
+            @include media('xmd') {
+                flex-wrap: wrap;
+            }
+            &-number {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background: #cfb1ed;
+                border-radius: 6px;
+                width: 49px;
+                height: 49px;
+                flex-shrink: 0;
+                font-family: var(--second-family);
+                font-weight: 400;
+                font-size: 24px;
+                line-height: 208%;
+                color: #fff;
+            }
+            &-arrow {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 49px;
+                width: max-content;
+                padding-left: 10px;
+                flex-shrink: 0;
+                svg {
+                    display: flex;
+                    flex-shrink: 0;
+                }
+            }
+        }
+        &__message {
+            font-family: var(--font-family);
+            font-weight: 400;
+            font-size: 20px;
+            text-align: center;
+            color: #626262;
+        }
+    }
+}

@@ -40,8 +40,8 @@
         &__wrapper {
             position: absolute;
             left: 50%;
-            bottom: 58px;
-            transform: translateX(-50%);
+            bottom: 61px;
+            transform: translateX(-50.5%);
             z-index: 3;
             width: max-content;
             @include media('sm') {
